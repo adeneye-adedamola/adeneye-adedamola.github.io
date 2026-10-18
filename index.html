@@ -4,195 +4,347 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; base-uri 'self'; form-action 'none'">
-<title>Adeneye Adedamola</title>
-<meta name="description" content="Adeneye Adedamola: MSc AI and Data Science student at the University of Hull with two and a half years in IT support and web management. Projects, experience, skills and CV.">
-<meta property="og:title" content="Adeneye Adedamola">
-<meta property="og:description" content="Data, IT support and web. MSc AI and Data Science, University of Hull.">
+<title>Adeneye Adedamola | Data, IT Support and Web</title>
+<meta name="description" content="Portfolio of Adeneye Adedamola: MSc AI and Data Science student at the University of Hull with two and a half years in IT support and web management. Projects, experience, skills and CV.">
+<meta property="og:title" content="Adeneye Adedamola | Data, IT Support and Web">
+<meta property="og:description" content="MSc AI and Data Science student at the University of Hull with two and a half years in IT support and web management.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#2B3FE0">
+<meta property="og:url" content="https://adeneye-adedamola.github.io/">
+<meta property="og:image" content="https://adeneye-adedamola.github.io/assets/hero-bg.jpg">
+<meta name="theme-color" content="#0A1630">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="preload" href="assets/fonts/syne-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/plus-jakarta-sans-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 <script src="script.js"></script>
 </head>
 <body>
+<!-- Icons, used with <svg><use href="#i-name"/></svg> -->
+<svg class="sprite" width="0" height="0" aria-hidden="true">
+  <defs>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/><path d="M22 10v6"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></symbol>
+    <symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M8 17V11"/><path d="M13 17V6"/><path d="M18 17v-4"/></symbol>
+    <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8"/><path d="M8 13h5"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24"><path d="M10 2v7.5a2 2 0 0 1-.2.9L4.7 20.5a1 1 0 0 0 .9 1.5h12.8a1 1 0 0 0 .9-1.5l-5.1-10.1a2 2 0 0 1-.2-.9V2"/><path d="M8.5 2h7"/><path d="M7 16h10"/></symbol>
+    <symbol id="i-road" viewBox="0 0 24 24"><path d="M4 21 8 3"/><path d="m20 21-4-18"/><path d="M12 6v2"/><path d="M12 11v2"/><path d="M12 16v3"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></symbol>
+  </defs>
+</svg>
+
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="hero" id="top">
-  <div class="wrap">
-    <nav class="nav" aria-label="Sections">
-      <a class="home" href="#top">Adeneye Adedamola</a>
-      <ul>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#path">Path</a></li>
-        <li><a href="#toolbox">Toolbox</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="theme" id="themeBtn" type="button" aria-pressed="false">Dark mode</button>
+<header class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a class="brand" href="#home" aria-label="Adeneye Adedamola, back to top">
+      <span class="brand-mark" aria-hidden="true">AA</span>
+      <span class="brand-name">Adeneye Adedamola</span>
+    </a>
+    <nav class="nav-links" id="navLinks" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-primary btn-sm nav-cv" href="assets/Adeneye_Adedamola_CV.pdf" download><svg class="ic"><use href="#i-download"/></svg>Download CV</a>
     </nav>
-
-    <div class="name-area">
-      <h1 class="name">Adeneye Adedamola</h1>
-      <canvas id="dots" aria-hidden="true"></canvas>
-    </div>
-
-    <div class="hero-foot">
-      <div class="hero-copy">
-        <p class="statement">I make data useful and keep technology working.</p>
-        <p class="intro">Two and a half years in IT support and web management, now studying for an MSc in AI and Data Science at the University of Hull. I'm looking for a data, IT support or web role.</p>
-      </div>
-      <div class="hero-actions">
-        <a class="btn pink" href="assets/Adeneye_Adedamola_CV.pdf" download>Download my CV</a>
-        <a class="btn line" href="mailto:adeneyeadedamola200@gmail.com">Email me</a>
-      </div>
+    <div class="nav-tools">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch to dark mode"><svg class="ic ic-moon"><use href="#i-moon"/></svg><svg class="ic ic-sun"><use href="#i-sun"/></svg></button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><svg class="ic ic-open"><use href="#i-menu"/></svg><svg class="ic ic-close"><use href="#i-close"/></svg></button>
     </div>
   </div>
 </header>
 
-<main id="main">
-  <section class="work wrap" id="work" aria-labelledby="work-h">
-    <div class="sec-head">
-      <h2 id="work-h">Things I've built</h2>
-      <p>One live app and four projects from my MSc. I'm happy to walk through the code and results in an interview.</p>
+<section class="hero" id="home" aria-labelledby="hero-name">
+  <div class="container hero-inner">
+    <p class="status"><span class="pulse" aria-hidden="true"></span>Open to data, IT support and web roles</p>
+    <h1 id="hero-name">Adeneye Adedamola</h1>
+    <p class="hero-role"><span>MSc AI and Data Science student</span><span class="sep" aria-hidden="true">|</span><span>IT Support and Web Manager</span></p>
+    <p class="hero-lead">I make data useful and keep technology working. Two and a half years of hands-on IT support and web management, now building data and AI skills at the University of Hull.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary btn-lg" href="#projects">View my work</a>
+      <a class="btn btn-glass btn-lg" href="assets/Adeneye_Adedamola_CV.pdf" download><svg class="ic"><use href="#i-download"/></svg>Download CV</a>
     </div>
-
-    <article class="feature">
-      <figure class="feature-shot">
-        <img src="assets/tracker-demo.jpg" width="1400" height="724" alt="The Job Hunt Tracker overview: a header counting down to an end-of-year goal, then tiles for applications sent, reply rate, interviews, offers and progress against this week's target.">
-        <figcaption>The tracker's overview, shown with sample data.</figcaption>
-      </figure>
-      <div class="feature-text">
-        <p class="kicker">Personal project, October 2026</p>
-        <h3>Job Hunt Tracker and Job Search Agent</h3>
-        <p class="lead">I built the app I use to run my own job search. It logs every application, shows what is working, and searches Reed and Adzuna for jobs that match my skills.</p>
-        <p><mark>Live and in daily use.</mark></p>
-        <div class="two">
-          <div>
-            <h4>What it does</h4>
-            <ul>
-              <li>Tracks applications, feedback and outcomes, with charts for the funnel, weekly targets and the stage where applications stop.</li>
-              <li>Searches two job sites at once, removes duplicate adverts and scores each job against my skills.</li>
-              <li>Gives friends read-only access, which I approve. Only I can edit.</li>
-            </ul>
-          </div>
-          <div>
-            <h4>How I built it</h4>
-            <ul>
-              <li>HTML, CSS and JavaScript, hosted on GitHub Pages and installable on a phone.</li>
-              <li>Supabase PostgreSQL database with email sign-in and Row Level Security rules.</li>
-              <li>A serverless function that keeps the job site API keys secret.</li>
-            </ul>
-          </div>
-        </div>
-        <p class="tools">HTML / CSS / JavaScript / PostgreSQL / Supabase / REST APIs / GitHub Pages</p>
-        <p><a class="textlink" href="https://github.com/adedamolaadeneye1000-create/job-tracker" rel="noopener">View the code on GitHub</a></p>
-      </div>
-    </article>
-
-    <ul class="projects" aria-label="MSc projects">
-      <li class="project">
-        <p class="p-when">MSc research project<br>September 2026 to now</p>
-        <div class="p-main">
-          <h3>Researchers' Evaluation of Agentic AI Across the Research Lifecycle</h3>
-          <p>I'm analysing published survey data on how researchers use agentic AI, using NLP, pattern mining and clustering to group researchers by attitude and find what helps or blocks adoption.</p>
-        </div>
-        <p class="p-result"><mark>In progress, supervised by Dr Daniel Farrow.</mark></p>
-      </li>
-      <li class="project">
-        <p class="p-when">Applied AI module<br>2026</p>
-        <div class="p-main">
-          <h3>Sentiment Classification of Customer Reviews</h3>
-          <p>I compared Naive Bayes, Logistic Regression, a simple RNN and an LSTM on Amazon kitchen product reviews, using TF-IDF and GloVe features in a reproducible Jupyter pipeline. I also found and fixed an embedding masking flaw that was holding the LSTM back.</p>
-        </div>
-        <p class="p-result"><mark>Best model: F1 score 0.830, ROC-AUC 0.921.</mark></p>
-      </li>
-      <li class="project">
-        <p class="p-when">Big Data and Data Mining module<br>2026</p>
-        <div class="p-main">
-          <h3>UK Road Accident Data Mining and Forecasting</h3>
-          <p>I used SQL and Python on Department for Transport accident data to find patterns by hour, day, vehicle type and severity. I wrote the Apriori algorithm from scratch, clustered accidents around Hull with K-means, and forecast weekly and daily accident counts.</p>
-        </div>
-        <p class="p-result"><mark>Findings became road safety recommendations for Hull and the East Riding.</mark></p>
-      </li>
-      <li class="project">
-        <p class="p-when">Applied AI module<br>2026</p>
-        <div class="p-main">
-          <h3>AI Crop Health Segmentation</h3>
-          <p>I designed a computer vision system for a farming co-operative: a ResNet-18 baseline improved with transfer learning for a small dataset, focal loss for rare classes and sliding-window inference for very large images.</p>
-        </div>
-        <p class="p-result"><mark>Presented as a timed design pitch backed by research.</mark></p>
-      </li>
+    <ul class="socials" aria-label="Find me online">
+      <li><a href="https://www.linkedin.com/in/adeneye-adedamola-85aa47198/" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"/></svg></a></li>
+      <li><a href="https://github.com/adeneye-adedamola" rel="noopener" aria-label="GitHub"><svg class="ic"><use href="#i-github"/></svg></a></li>
+      <li><a href="mailto:adeneyeadedamola200@gmail.com" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a></li>
     </ul>
-  </section>
+  </div>
+  <a class="scroll-cue" href="#about" aria-label="Scroll to About"><svg class="ic"><use href="#i-arrow-down"/></svg></a>
+</section>
 
-  <section class="path wrap" id="path" aria-labelledby="path-h">
-    <div class="sec-head">
-      <h2 id="path-h">My path so far</h2>
-      <p>Most recent first.</p>
-    </div>
-    <ol class="timeline">
-      <li class="now">
-        <p class="t-when">Now, finishing 2027</p>
-        <h3>MSc AI and Data Science</h3>
-        <p class="t-where">University of Hull</p>
-        <p>Modules include Applied AI, Big Data and Data Mining, and Data Fundamentals.</p>
-      </li>
-      <li>
-        <p class="t-when">August 2023 to March 2026</p>
-        <h3>IT Support and Web Manager</h3>
-        <p class="t-where">W.O Consult</p>
-        <ul>
-          <li>Managed and maintained the company WordPress website.</li>
-          <li>Administered the Salesforce and LeadSquared CRM systems that tracked clients from enquiry to enrolment.</li>
-          <li>Gave staff remote IT support, fixing problems so daily work kept running.</li>
+<main id="main">
+  <!-- About -->
+  <section class="section" id="about" aria-labelledby="about-h">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">About me</p>
+        <h2 id="about-h">Practical IT experience, backed by data and AI</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm an MSc AI and Data Science student at the University of Hull with a BSc in Computer Science (Second Class Upper).</p>
+          <p>For two and a half years I was the IT Support and Web Manager at W.O Consult. I looked after the company website, ran the CRM systems that tracked every client, and fixed staff IT problems so the business kept moving.</p>
+          <p>Now I combine that hands-on experience with data skills: Python, SQL, machine learning and NLP. I like building tools people actually use, like the job tracker and job search agent I run my own job hunt with.</p>
+          <div class="about-cta">
+            <a class="btn btn-primary" href="#contact"><svg class="ic"><use href="#i-mail"/></svg>Get in touch</a>
+            <a class="btn btn-outline" href="assets/Adeneye_Adedamola_CV.pdf" download><svg class="ic"><use href="#i-download"/></svg>Download CV</a>
+          </div>
+        </div>
+        <ul class="facts reveal" aria-label="Quick facts">
+          <li><span class="fact-ic"><svg class="ic"><use href="#i-pin"/></svg></span><div><p class="fact-label">Based in</p><p class="fact-value">Hull, United Kingdom</p></div></li>
+          <li><span class="fact-ic"><svg class="ic"><use href="#i-cap"/></svg></span><div><p class="fact-label">Studying</p><p class="fact-value">MSc AI and Data Science, finishing 2027</p></div></li>
+          <li><span class="fact-ic"><svg class="ic"><use href="#i-briefcase"/></svg></span><div><p class="fact-label">Experience</p><p class="fact-value">2.5 years in IT support and web</p></div></li>
+          <li><span class="fact-ic"><svg class="ic"><use href="#i-target"/></svg></span><div><p class="fact-label">Looking for</p><p class="fact-value">Data, IT support and web roles</p></div></li>
         </ul>
-      </li>
-      <li>
-        <p class="t-when">2023</p>
-        <h3>BSc Computer Science, Second Class Upper (2:1)</h3>
-        <p class="t-where">Ladoke Akintola University of Technology, Nigeria</p>
-      </li>
-    </ol>
-    <p class="certs"><strong>Certificates:</strong> Professional Certificate in Full Stack Development. British Council Counsellor Certificate.</p>
+      </div>
+      <ul class="stats reveal" aria-label="In numbers">
+        <li><p class="stat-num">2.5+</p><p class="stat-label">Years in IT support and web</p></li>
+        <li><p class="stat-num">5</p><p class="stat-label">Projects built</p></li>
+        <li><p class="stat-num">0.830</p><p class="stat-label">Best F1 score, NLP project</p></li>
+        <li><p class="stat-num">2:1</p><p class="stat-label">BSc Computer Science</p></li>
+      </ul>
+    </div>
   </section>
 
-  <section class="toolbox wrap" id="toolbox" aria-labelledby="tool-h">
-    <div class="sec-head">
-      <h2 id="tool-h">Toolbox</h2>
+  <!-- Projects -->
+  <section class="section section-alt" id="projects" aria-labelledby="projects-h">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Projects</p>
+        <h2 id="projects-h">Things I've built</h2>
+        <p class="section-sub">One live web app and four projects from my MSc. I'm happy to walk through the code and results in an interview.</p>
+      </div>
+
+      <article class="featured reveal">
+        <div class="featured-media">
+          <img src="assets/tracker-demo.jpg" width="1400" height="724" alt="The Job Hunt Tracker overview: a header counting down to an end-of-year goal, then tiles for applications sent, reply rate, interviews, offers and progress against this week's target." loading="lazy">
+          <span class="badge-live"><span class="pulse" aria-hidden="true"></span>Live, in daily use</span>
+        </div>
+        <div class="featured-body">
+          <p class="tag">Featured project, October 2026</p>
+          <h3>Job Hunt Tracker and Job Search Agent</h3>
+          <dl class="case">
+            <div><dt>Problem</dt><dd>Job hunting across many sites made it hard to see what was working.</dd></div>
+            <div><dt>What I built</dt><dd>A web app that logs every application with charts for replies, interviews and weekly targets, plus an agent that searches Reed and Adzuna, removes duplicates and scores each job against my skills.</dd></div>
+            <div><dt>How</dt><dd>HTML, CSS and JavaScript on GitHub Pages, a Supabase PostgreSQL database with secure sign-in and Row Level Security, and a serverless function that keeps the API keys secret.</dd></div>
+          </dl>
+          <ul class="chips" aria-label="Tools used"><li>JavaScript</li><li>PostgreSQL</li><li>Supabase</li><li>REST APIs</li><li>GitHub Pages</li></ul>
+          <div class="card-links">
+            <a class="btn btn-primary btn-sm" href="https://github.com/adeneye-adedamola/job-tracker" rel="noopener"><svg class="ic"><use href="#i-github"/></svg>View code</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="cover cover-1"><svg class="ic"><use href="#i-flask"/></svg></div>
+          <div class="card-body">
+            <p class="tag">MSc research project, 2026 to now</p>
+            <h3>Researchers' Evaluation of Agentic AI</h3>
+            <p>Analysing published survey data on how researchers use agentic AI. Using NLP, pattern mining and clustering to group researchers by attitude and find what helps or blocks adoption.</p>
+            <p class="result"><svg class="ic"><use href="#i-check"/></svg>In progress, supervised by Dr Daniel Farrow</p>
+            <ul class="chips"><li>Python</li><li>NLP</li><li>Clustering</li></ul>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="cover cover-2"><svg class="ic"><use href="#i-chat"/></svg></div>
+          <div class="card-body">
+            <p class="tag">Applied AI module, 2026</p>
+            <h3>Sentiment Classification of Customer Reviews</h3>
+            <p>Compared Naive Bayes, Logistic Regression, a simple RNN and an LSTM on Amazon kitchen product reviews, using TF-IDF and GloVe features in a reproducible pipeline.</p>
+            <p class="result"><svg class="ic"><use href="#i-check"/></svg>Best model: F1 0.830, ROC-AUC 0.921</p>
+            <ul class="chips"><li>scikit-learn</li><li>TensorFlow</li><li>NLP</li></ul>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="cover cover-3"><svg class="ic"><use href="#i-road"/></svg></div>
+          <div class="card-body">
+            <p class="tag">Big Data and Data Mining module, 2026</p>
+            <h3>UK Road Accident Data Mining and Forecasting</h3>
+            <p>Used SQL and Python on Department for Transport data to find patterns by hour, day, vehicle and severity. Wrote Apriori from scratch, clustered accidents around Hull with K-means and forecast accident counts.</p>
+            <p class="result"><svg class="ic"><use href="#i-check"/></svg>Road safety recommendations for Hull</p>
+            <ul class="chips"><li>SQL</li><li>pandas</li><li>K-means</li><li>Forecasting</li></ul>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="cover cover-4"><svg class="ic"><use href="#i-leaf"/></svg></div>
+          <div class="card-body">
+            <p class="tag">Applied AI module, 2026</p>
+            <h3>AI Crop Health Segmentation</h3>
+            <p>Designed a computer vision system for a farming co-operative: a ResNet-18 baseline improved with transfer learning, focal loss for rare classes and sliding-window inference for very large images.</p>
+            <p class="result"><svg class="ic"><use href="#i-check"/></svg>Presented as a timed design pitch</p>
+            <ul class="chips"><li>Computer vision</li><li>CNN</li><li>Transfer learning</li></ul>
+          </div>
+        </article>
+      </div>
     </div>
-    <div class="tool-cols">
-      <div>
-        <h3>Data and AI</h3>
-        <ul><li>Python, pandas, scikit-learn, TensorFlow</li><li>SQL and Jupyter</li><li>NLP with TF-IDF and GloVe</li><li>Clustering and association rules</li><li>Time series forecasting</li></ul>
+  </section>
+
+  <!-- Experience and education -->
+  <section class="section" id="experience" aria-labelledby="exp-h">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Experience and education</p>
+        <h2 id="exp-h">My journey so far</h2>
       </div>
-      <div>
-        <h3>Web</h3>
-        <ul><li>HTML, CSS, JavaScript</li><li>WordPress</li><li>Supabase and PostgreSQL</li><li>REST APIs</li><li>GitHub Pages</li></ul>
+      <ol class="timeline">
+        <li class="reveal">
+          <span class="t-node now" aria-hidden="true"><svg class="ic"><use href="#i-cap"/></svg></span>
+          <div class="t-card">
+            <div class="t-top"><h3>MSc AI and Data Science</h3><span class="date">Now, finishing 2027</span></div>
+            <p class="t-org">University of Hull</p>
+            <p>Modules include Applied AI, Big Data and Data Mining, and Data Fundamentals. Research project on agentic AI in research.</p>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="t-node" aria-hidden="true"><svg class="ic"><use href="#i-briefcase"/></svg></span>
+          <div class="t-card">
+            <div class="t-top"><h3>IT Support and Web Manager</h3><span class="date">Aug 2023 to Mar 2026</span></div>
+            <p class="t-org">W.O Consult</p>
+            <ul>
+              <li>Managed and maintained the company WordPress website.</li>
+              <li>Administered the Salesforce and LeadSquared CRM systems that tracked clients from enquiry to enrolment.</li>
+              <li>Gave staff remote IT support, fixing problems so daily work kept running.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="reveal">
+          <span class="t-node" aria-hidden="true"><svg class="ic"><use href="#i-cap"/></svg></span>
+          <div class="t-card">
+            <div class="t-top"><h3>BSc Computer Science</h3><span class="date">2023</span></div>
+            <p class="t-org">Ladoke Akintola University of Technology, Nigeria</p>
+            <p>Graduated with Second Class Upper (2:1).</p>
+          </div>
+        </li>
+      </ol>
+      <div class="certs reveal">
+        <h3>Certificates</h3>
+        <ul class="chips"><li>Professional Certificate in Full Stack Development</li><li>British Council Counsellor Certificate</li></ul>
       </div>
-      <div>
-        <h3>IT support</h3>
-        <ul><li>Remote IT support</li><li>Troubleshooting</li><li>Salesforce</li><li>LeadSquared CRM</li></ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section section-alt" id="skills" aria-labelledby="skills-h">
+    <div class="container">
+      <div class="section-head">
+        <p class="kicker">Skills</p>
+        <h2 id="skills-h">What I work with</h2>
       </div>
-      <div>
-        <h3>With people</h3>
-        <ul><li>Explaining technical problems simply</li><li>Presenting my work</li><li>Delivering to deadlines</li></ul>
+      <div class="skill-grid">
+        <div class="skill-card reveal">
+          <span class="skill-ic"><svg class="ic"><use href="#i-chart"/></svg></span>
+          <h3>Data and AI</h3>
+          <ul class="chips"><li>Python</li><li>pandas</li><li>scikit-learn</li><li>TensorFlow</li><li>SQL</li><li>Jupyter</li><li>NLP</li><li>Clustering</li><li>Forecasting</li></ul>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-ic"><svg class="ic"><use href="#i-code"/></svg></span>
+          <h3>Web development</h3>
+          <ul class="chips"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>WordPress</li><li>REST APIs</li><li>GitHub Pages</li></ul>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-ic"><svg class="ic"><use href="#i-db"/></svg></span>
+          <h3>Databases and cloud</h3>
+          <ul class="chips"><li>PostgreSQL</li><li>SQLite</li><li>Supabase</li><li>Row Level Security</li><li>Serverless functions</li></ul>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-ic"><svg class="ic"><use href="#i-wrench"/></svg></span>
+          <h3>IT support and systems</h3>
+          <ul class="chips"><li>Remote IT support</li><li>Troubleshooting</li><li>Salesforce</li><li>LeadSquared CRM</li></ul>
+        </div>
+        <div class="skill-card reveal">
+          <span class="skill-ic"><svg class="ic"><use href="#i-users"/></svg></span>
+          <h3>Working with people</h3>
+          <ul class="chips"><li>Explaining technical problems simply</li><li>Presenting</li><li>Meeting deadlines</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact" aria-labelledby="contact-h">
+    <div class="container">
+      <div class="contact-card reveal">
+        <div class="contact-info">
+          <p class="kicker light">Contact</p>
+          <h2 id="contact-h">Let's work together</h2>
+          <p>I'm open to data, IT support and web roles. Send me a message and I'll get back to you.</p>
+          <ul class="contact-list">
+            <li><a href="mailto:adeneyeadedamola200@gmail.com"><span class="c-ic"><svg class="ic"><use href="#i-mail"/></svg></span><span><span class="c-label">Email</span>adeneyeadedamola200@gmail.com</span></a></li>
+            <li><a href="https://www.linkedin.com/in/adeneye-adedamola-85aa47198/" rel="noopener"><span class="c-ic"><svg class="ic"><use href="#i-linkedin"/></svg></span><span><span class="c-label">LinkedIn</span>adeneye-adedamola</span></a></li>
+            <li><a href="https://github.com/adeneye-adedamola" rel="noopener"><span class="c-ic"><svg class="ic"><use href="#i-github"/></svg></span><span><span class="c-label">GitHub</span>adeneye-adedamola</span></a></li>
+            <li><span class="c-static"><span class="c-ic"><svg class="ic"><use href="#i-pin"/></svg></span><span><span class="c-label">Location</span>Hull, United Kingdom</span></span></li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="cf-name">Your name</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="cf-subject">Subject</label>
+            <input id="cf-subject" name="subject" type="text" placeholder="For example: IT Support Analyst role">
+          </div>
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+          </div>
+          <p class="form-error" id="cf-error" role="alert" hidden></p>
+          <button class="btn btn-primary btn-block" type="submit"><svg class="ic"><use href="#i-send"/></svg>Send message</button>
+          <p class="form-note">This opens your email app with the message ready to send.</p>
+        </form>
       </div>
     </div>
   </section>
 </main>
 
-<footer class="contact" id="contact">
-  <div class="wrap">
-    <h2>Get in touch</h2>
-    <p class="intro">I'm open to data, IT support and web roles. Email is the quickest way to reach me.</p>
-    <p><a class="email" href="mailto:adeneyeadedamola200@gmail.com">adeneyeadedamola200<wbr>@gmail.com</a></p>
-    <p class="links">
-      <a href="assets/Adeneye_Adedamola_CV.pdf" download>Download my CV</a>
-      <a href="https://www.linkedin.com/in/adeneye-adedamola-85aa47198/" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/adedamolaadeneye1000-create" rel="noopener">GitHub</a>
-    </p>
-    <p class="fine">© <span id="year">2026</span> Adeneye Adedamola</p>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="f-brand">
+      <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">AA</span><span class="brand-name">Adeneye Adedamola</span></a>
+      <p>MSc AI and Data Science student and IT support professional, based in Hull.</p>
+    </div>
+    <div>
+      <h3>Quick links</h3>
+      <ul class="f-links"><li><a href="#about">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li></ul>
+    </div>
+    <div>
+      <h3>Connect</h3>
+      <ul class="socials socials-sm">
+        <li><a href="https://www.linkedin.com/in/adeneye-adedamola-85aa47198/" rel="noopener" aria-label="LinkedIn"><svg class="ic"><use href="#i-linkedin"/></svg></a></li>
+        <li><a href="https://github.com/adeneye-adedamola" rel="noopener" aria-label="GitHub"><svg class="ic"><use href="#i-github"/></svg></a></li>
+        <li><a href="mailto:adeneyeadedamola200@gmail.com" aria-label="Email"><svg class="ic"><use href="#i-mail"/></svg></a></li>
+      </ul>
+      <a class="f-cv" href="assets/Adeneye_Adedamola_CV.pdf" download><svg class="ic"><use href="#i-download"/></svg>Download my CV</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year">2026</span> Adeneye Adedamola. All rights reserved.</p>
+    <a href="#home">Back to top</a>
   </div>
 </footer>
+
+<a class="to-top" id="toTop" href="#home" aria-label="Back to top"><svg class="ic"><use href="#i-up"/></svg></a>
 </body>
 </html>

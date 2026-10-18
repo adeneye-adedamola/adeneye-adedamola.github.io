@@ -1,15 +1,17 @@
 # Adeneye Adedamola, portfolio
 
-A one-page portfolio site: projects, experience, education, skills and a CV download.
+My personal portfolio: about me, projects, experience, skills and contact, with a CV download.
 
-Plain HTML, CSS and JavaScript with no build step, hosted on GitHub Pages. It has light and dark modes and works on phones. When the page loads, scattered dots move into place to spell my name, like data points settling into clusters. Pink dots are the outliers.
+Plain HTML, CSS and JavaScript with no build step, hosted on GitHub Pages.
+
+**Features:** sticky navbar with a mobile menu, light and dark mode, the current section highlighted in the menu, sections that fade in as you scroll, a back-to-top button, and a contact form that opens your email app with the message filled in.
 
 ## Files
 
 - `index.html`: all the page content. Edit the text here.
 - `styles.css`: colours, fonts and layout. Colours are at the top, for light and dark mode.
-- `script.js`: the light and dark mode switch, and the dot animation.
-- `assets/`: the CV PDF, the tracker screenshot, the site icon and the fonts.
+- `script.js`: dark mode, menu, scrolling effects and the contact form.
+- `assets/`: CV PDF, header background image, tracker screenshot, site icon and fonts.
 
 ## Updating
 
@@ -19,4 +21,4 @@ To update the CV, upload a new PDF with the same name, `Adeneye_Adedamola_CV.pdf
 
 ## Credits
 
-Fonts: Syne (The Syne Project Authors) and Atkinson Hyperlegible (Braille Institute of America), both under the SIL Open Font License. Licence files are in `assets/fonts`.
+Fonts: Plus Jakarta Sans and Inter, both under the SIL Open Font License (licence files in `assets/fonts`). Icons drawn in the style of Lucide (ISC licence).
