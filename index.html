@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; base-uri 'self'; form-action 'none'">
+<title>Adeneye Adedamola</title>
+<meta name="description" content="Adeneye Adedamola: MSc AI and Data Science student at the University of Hull with two and a half years in IT support and web management. Projects, experience, skills and CV.">
+<meta property="og:title" content="Adeneye Adedamola">
+<meta property="og:description" content="Data, IT support and web. MSc AI and Data Science, University of Hull.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#2B3FE0">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/syne-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <nav class="nav" aria-label="Sections">
+      <a class="home" href="#top">Adeneye Adedamola</a>
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#path">Path</a></li>
+        <li><a href="#toolbox">Toolbox</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme" id="themeBtn" type="button" aria-pressed="false">Dark mode</button>
+    </nav>
+
+    <div class="name-area">
+      <h1 class="name">Adeneye Adedamola</h1>
+      <canvas id="dots" aria-hidden="true"></canvas>
+    </div>
+
+    <div class="hero-foot">
+      <div class="hero-copy">
+        <p class="statement">I make data useful and keep technology working.</p>
+        <p class="intro">Two and a half years in IT support and web management, now studying for an MSc in AI and Data Science at the University of Hull. I'm looking for a data, IT support or web role.</p>
+      </div>
+      <div class="hero-actions">
+        <a class="btn pink" href="assets/Adeneye_Adedamola_CV.pdf" download>Download my CV</a>
+        <a class="btn line" href="mailto:adeneyeadedamola200@gmail.com">Email me</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="work wrap" id="work" aria-labelledby="work-h">
+    <div class="sec-head">
+      <h2 id="work-h">Things I've built</h2>
+      <p>One live app and four projects from my MSc. I'm happy to walk through the code and results in an interview.</p>
+    </div>
+
+    <article class="feature">
+      <figure class="feature-shot">
+        <img src="assets/tracker-demo.jpg" width="1400" height="724" alt="The Job Hunt Tracker overview: a header counting down to an end-of-year goal, then tiles for applications sent, reply rate, interviews, offers and progress against this week's target.">
+        <figcaption>The tracker's overview, shown with sample data.</figcaption>
+      </figure>
+      <div class="feature-text">
+        <p class="kicker">Personal project, October 2026</p>
+        <h3>Job Hunt Tracker and Job Search Agent</h3>
+        <p class="lead">I built the app I use to run my own job search. It logs every application, shows what is working, and searches Reed and Adzuna for jobs that match my skills.</p>
+        <p><mark>Live and in daily use.</mark></p>
+        <div class="two">
+          <div>
+            <h4>What it does</h4>
+            <ul>
+              <li>Tracks applications, feedback and outcomes, with charts for the funnel, weekly targets and the stage where applications stop.</li>
+              <li>Searches two job sites at once, removes duplicate adverts and scores each job against my skills.</li>
+              <li>Gives friends read-only access, which I approve. Only I can edit.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>How I built it</h4>
+            <ul>
+              <li>HTML, CSS and JavaScript, hosted on GitHub Pages and installable on a phone.</li>
+              <li>Supabase PostgreSQL database with email sign-in and Row Level Security rules.</li>
+              <li>A serverless function that keeps the job site API keys secret.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="tools">HTML / CSS / JavaScript / PostgreSQL / Supabase / REST APIs / GitHub Pages</p>
+        <p><a class="textlink" href="https://github.com/adedamolaadeneye1000-create/job-tracker" rel="noopener">View the code on GitHub</a></p>
+      </div>
+    </article>
+
+    <ul class="projects" aria-label="MSc projects">
+      <li class="project">
+        <p class="p-when">MSc research project<br>September 2026 to now</p>
+        <div class="p-main">
+          <h3>Researchers' Evaluation of Agentic AI Across the Research Lifecycle</h3>
+          <p>I'm analysing published survey data on how researchers use agentic AI, using NLP, pattern mining and clustering to group researchers by attitude and find what helps or blocks adoption.</p>
+        </div>
+        <p class="p-result"><mark>In progress, supervised by Dr Daniel Farrow.</mark></p>
+      </li>
+      <li class="project">
+        <p class="p-when">Applied AI module<br>2026</p>
+        <div class="p-main">
+          <h3>Sentiment Classification of Customer Reviews</h3>
+          <p>I compared Naive Bayes, Logistic Regression, a simple RNN and an LSTM on Amazon kitchen product reviews, using TF-IDF and GloVe features in a reproducible Jupyter pipeline. I also found and fixed an embedding masking flaw that was holding the LSTM back.</p>
+        </div>
+        <p class="p-result"><mark>Best model: F1 score 0.830, ROC-AUC 0.921.</mark></p>
+      </li>
+      <li class="project">
+        <p class="p-when">Big Data and Data Mining module<br>2026</p>
+        <div class="p-main">
+          <h3>UK Road Accident Data Mining and Forecasting</h3>
+          <p>I used SQL and Python on Department for Transport accident data to find patterns by hour, day, vehicle type and severity. I wrote the Apriori algorithm from scratch, clustered accidents around Hull with K-means, and forecast weekly and daily accident counts.</p>
+        </div>
+        <p class="p-result"><mark>Findings became road safety recommendations for Hull and the East Riding.</mark></p>
+      </li>
+      <li class="project">
+        <p class="p-when">Applied AI module<br>2026</p>
+        <div class="p-main">
+          <h3>AI Crop Health Segmentation</h3>
+          <p>I designed a computer vision system for a farming co-operative: a ResNet-18 baseline improved with transfer learning for a small dataset, focal loss for rare classes and sliding-window inference for very large images.</p>
+        </div>
+        <p class="p-result"><mark>Presented as a timed design pitch backed by research.</mark></p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="path wrap" id="path" aria-labelledby="path-h">
+    <div class="sec-head">
+      <h2 id="path-h">My path so far</h2>
+      <p>Most recent first.</p>
+    </div>
+    <ol class="timeline">
+      <li class="now">
+        <p class="t-when">Now, finishing 2027</p>
+        <h3>MSc AI and Data Science</h3>
+        <p class="t-where">University of Hull</p>
+        <p>Modules include Applied AI, Big Data and Data Mining, and Data Fundamentals.</p>
+      </li>
+      <li>
+        <p class="t-when">August 2023 to March 2026</p>
+        <h3>IT Support and Web Manager</h3>
+        <p class="t-where">W.O Consult</p>
+        <ul>
+          <li>Managed and maintained the company WordPress website.</li>
+          <li>Administered the Salesforce and LeadSquared CRM systems that tracked clients from enquiry to enrolment.</li>
+          <li>Gave staff remote IT support, fixing problems so daily work kept running.</li>
+        </ul>
+      </li>
+      <li>
+        <p class="t-when">2023</p>
+        <h3>BSc Computer Science, Second Class Upper (2:1)</h3>
+        <p class="t-where">Ladoke Akintola University of Technology, Nigeria</p>
+      </li>
+    </ol>
+    <p class="certs"><strong>Certificates:</strong> Professional Certificate in Full Stack Development. British Council Counsellor Certificate.</p>
+  </section>
+
+  <section class="toolbox wrap" id="toolbox" aria-labelledby="tool-h">
+    <div class="sec-head">
+      <h2 id="tool-h">Toolbox</h2>
+    </div>
+    <div class="tool-cols">
+      <div>
+        <h3>Data and AI</h3>
+        <ul><li>Python, pandas, scikit-learn, TensorFlow</li><li>SQL and Jupyter</li><li>NLP with TF-IDF and GloVe</li><li>Clustering and association rules</li><li>Time series forecasting</li></ul>
+      </div>
+      <div>
+        <h3>Web</h3>
+        <ul><li>HTML, CSS, JavaScript</li><li>WordPress</li><li>Supabase and PostgreSQL</li><li>REST APIs</li><li>GitHub Pages</li></ul>
+      </div>
+      <div>
+        <h3>IT support</h3>
+        <ul><li>Remote IT support</li><li>Troubleshooting</li><li>Salesforce</li><li>LeadSquared CRM</li></ul>
+      </div>
+      <div>
+        <h3>With people</h3>
+        <ul><li>Explaining technical problems simply</li><li>Presenting my work</li><li>Delivering to deadlines</li></ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="contact" id="contact">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <p class="intro">I'm open to data, IT support and web roles. Email is the quickest way to reach me.</p>
+    <p><a class="email" href="mailto:adeneyeadedamola200@gmail.com">adeneyeadedamola200<wbr>@gmail.com</a></p>
+    <p class="links">
+      <a href="assets/Adeneye_Adedamola_CV.pdf" download>Download my CV</a>
+      <a href="https://www.linkedin.com/in/adeneye-adedamola-85aa47198/" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/adedamolaadeneye1000-create" rel="noopener">GitHub</a>
+    </p>
+    <p class="fine">© <span id="year">2026</span> Adeneye Adedamola</p>
+  </div>
+</footer>
+</body>
+</html>
